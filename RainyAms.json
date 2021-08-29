@@ -1,0 +1,1786 @@
+[
+    {
+        "Var1": "AG-BHGH",
+        "Var2": "90"
+    },
+    {
+        "Var1": "AG-PNCB",
+        "Var2": "80.75"
+    },
+    {
+        "Var1": "AGP-BLH",
+        "Var2": "73"
+    },
+    {
+        "Var1": "AGP-SEP",
+        "Var2": "66.75"
+    },
+    {
+        "Var1": "AKIP-GN",
+        "Var2": "89"
+    },
+    {
+        "Var1": "AKIP-MAJ",
+        "Var2": "82.25"
+    },
+    {
+        "Var1": "AKRA-NAI",
+        "Var2": "72.25"
+    },
+    {
+        "Var1": "AKRA-SSP",
+        "Var2": "72"
+    },
+    {
+        "Var1": "ASKR-GUMA",
+        "Var2": "82"
+    },
+    {
+        "Var1": "ASKR-HB",
+        "Var2": "69"
+    },
+    {
+        "Var1": "BARN-DAKE",
+        "Var2": "65.5"
+    },
+    {
+        "Var1": "BARN-DDJ",
+        "Var2": "72"
+    },
+    {
+        "Var1": "BARU-DBT",
+        "Var2": "65.25"
+    },
+    {
+        "Var1": "BARU-JNM",
+        "Var2": "80.75"
+    },
+    {
+        "Var1": "BBDB-BZB",
+        "Var2": "33"
+    },
+    {
+        "Var1": "BBDB-EDG",
+        "Var2": "39.6667"
+    },
+    {
+        "Var1": "BBLA-BSHT",
+        "Var2": "68.75"
+    },
+    {
+        "Var1": "BBLA-CQR",
+        "Var2": "87.75"
+    },
+    {
+        "Var1": "BBR-SOLA",
+        "Var2": "39"
+    },
+    {
+        "Var1": "BBR-TALA",
+        "Var2": "39"
+    },
+    {
+        "Var1": "BBT-BRPK",
+        "Var2": "65.25"
+    },
+    {
+        "Var1": "BBT-DGNR",
+        "Var2": "66"
+    },
+    {
+        "Var1": "BDC-HYG",
+        "Var2": "55.25"
+    },
+    {
+        "Var1": "BDYP-KLKR",
+        "Var2": "76.5"
+    },
+    {
+        "Var1": "BDYP-SPR",
+        "Var2": "61.25"
+    },
+    {
+        "Var1": "BDZ-JKL",
+        "Var2": "92.5"
+    },
+    {
+        "Var1": "BDZ-THP",
+        "Var2": "91.75"
+    },
+    {
+        "Var1": "BEB-BFT",
+        "Var2": "88.3333"
+    },
+    {
+        "Var1": "BEB-REJ",
+        "Var2": "84.3333"
+    },
+    {
+        "Var1": "BFT-BEB",
+        "Var2": "90"
+    },
+    {
+        "Var1": "BFT-SGV",
+        "Var2": "88"
+    },
+    {
+        "Var1": "BGB-NAI",
+        "Var2": "70"
+    },
+    {
+        "Var1": "BGJT-GIA",
+        "Var2": "67"
+    },
+    {
+        "Var1": "BGJT-JDP",
+        "Var2": "69"
+    },
+    {
+        "Var1": "BGJT-NGRI",
+        "Var2": "66.75"
+    },
+    {
+        "Var1": "BGL-BHNA",
+        "Var2": "82.5"
+    },
+    {
+        "Var1": "BGL-MYHT",
+        "Var2": "87"
+    },
+    {
+        "Var1": "BGRD-LBTL",
+        "Var2": "81"
+    },
+    {
+        "Var1": "BGRD-SXC",
+        "Var2": "62.75"
+    },
+    {
+        "Var1": "BHGH-AG",
+        "Var2": "89.25"
+    },
+    {
+        "Var1": "BHGH-BHNA",
+        "Var2": "77"
+    },
+    {
+        "Var1": "BHGH-SNTR",
+        "Var2": "75.6667"
+    },
+    {
+        "Var1": "BHKA-KBGH",
+        "Var2": "83.5"
+    },
+    {
+        "Var1": "BHKA-SXC",
+        "Var2": "72.25"
+    },
+    {
+        "Var1": "BHNA-BGL",
+        "Var2": "79.25"
+    },
+    {
+        "Var1": "BHNA-BHGH",
+        "Var2": "77"
+    },
+    {
+        "Var1": "BHNA-SNTR",
+        "Var2": "75.3333"
+    },
+    {
+        "Var1": "BHPA-MGT",
+        "Var2": "77.5"
+    },
+    {
+        "Var1": "BHPA-SNU",
+        "Var2": "73.25"
+    },
+    {
+        "Var1": "BIJ-KLNP",
+        "Var2": "83.75"
+    },
+    {
+        "Var1": "BIJ-THP",
+        "Var2": "84.5"
+    },
+    {
+        "Var1": "BIRA-DTK",
+        "Var2": "83"
+    },
+    {
+        "Var1": "BIRA-GUMA",
+        "Var2": "83.5"
+    },
+    {
+        "Var1": "BLH-AGP",
+        "Var2": "75.75"
+    },
+    {
+        "Var1": "BLH-DDJ",
+        "Var2": "83"
+    },
+    {
+        "Var1": "BLN-DHK",
+        "Var2": "51.5"
+    },
+    {
+        "Var1": "BLN-LKF",
+        "Var2": "68.75"
+    },
+    {
+        "Var1": "BLN-PQS",
+        "Var2": "56"
+    },
+    {
+        "Var1": "BLYG-BLYH",
+        "Var2": "56.5"
+    },
+    {
+        "Var1": "BLYG-DAKE",
+        "Var2": "69.25"
+    },
+    {
+        "Var1": "BLYH-BLYG",
+        "Var2": "50.75"
+    },
+    {
+        "Var1": "BLYH-RCD",
+        "Var2": "68.25"
+    },
+    {
+        "Var1": "BMG-BT",
+        "Var2": "78.25"
+    },
+    {
+        "Var1": "BMG-DTK",
+        "Var2": "81.5"
+    },
+    {
+        "Var1": "BNAA-BNJ",
+        "Var2": "87"
+    },
+    {
+        "Var1": "BNAA-CDP",
+        "Var2": "89"
+    },
+    {
+        "Var1": "BNJ-BNAA",
+        "Var2": "87.75"
+    },
+    {
+        "Var1": "BNJ-STBB",
+        "Var2": "87.75"
+    },
+    {
+        "Var1": "BNKA-PNCB",
+        "Var2": "70.75"
+    },
+    {
+        "Var1": "BNKA-RHA",
+        "Var2": "76.25"
+    },
+    {
+        "Var1": "BNXR-DDJ",
+        "Var2": "69.5"
+    },
+    {
+        "Var1": "BNXR-KGK",
+        "Var2": "66.25"
+    },
+    {
+        "Var1": "BNXR-SDAH",
+        "Var2": "69"
+    },
+    {
+        "Var1": "BP-PTF",
+        "Var2": "77"
+    },
+    {
+        "Var1": "BP-TGH",
+        "Var2": "66.5"
+    },
+    {
+        "Var1": "BPAE-BRPA",
+        "Var2": "79"
+    },
+    {
+        "Var1": "BPAE-JOX",
+        "Var2": "78"
+    },
+    {
+        "Var1": "BPC-CSZ",
+        "Var2": "80"
+    },
+    {
+        "Var1": "BPC-NBPH",
+        "Var2": "83.3333"
+    },
+    {
+        "Var1": "BPD-DHU",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "BPD-KNJ",
+        "Var2": "87.6667"
+    },
+    {
+        "Var1": "BPN-HRSR",
+        "Var2": "80.25"
+    },
+    {
+        "Var1": "BPN-MIJ",
+        "Var2": "94.25"
+    },
+    {
+        "Var1": "BQG-PRTL",
+        "Var2": "85.3333"
+    },
+    {
+        "Var1": "BQG-SBNM",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "BRJ-MJT",
+        "Var2": "68.25"
+    },
+    {
+        "Var1": "BRJ-SSP",
+        "Var2": "73.5"
+    },
+    {
+        "Var1": "BRP-KYP",
+        "Var2": "67.5"
+    },
+    {
+        "Var1": "BRP-MAK",
+        "Var2": "72"
+    },
+    {
+        "Var1": "BRP-SSRD",
+        "Var2": "63.75"
+    },
+    {
+        "Var1": "BRPA-BPAE",
+        "Var2": "80"
+    },
+    {
+        "Var1": "BRPK-BBT",
+        "Var2": "63.75"
+    },
+    {
+        "Var1": "BRPK-NBE",
+        "Var2": "66"
+    },
+    {
+        "Var1": "BSD-GURN",
+        "Var2": "73"
+    },
+    {
+        "Var1": "BSD-NTA",
+        "Var2": "75.5"
+    },
+    {
+        "Var1": "BSHT-BBLA",
+        "Var2": "67"
+    },
+    {
+        "Var1": "BSHT-MTAP",
+        "Var2": "80.25"
+    },
+    {
+        "Var1": "BSLA-HRO",
+        "Var2": "81.75"
+    },
+    {
+        "Var1": "BSLA-LBTL",
+        "Var2": "70.25"
+    },
+    {
+        "Var1": "BT-BMG",
+        "Var2": "76.25"
+    },
+    {
+        "Var1": "BT-HHR",
+        "Var2": "65"
+    },
+    {
+        "Var1": "BT-KZPR",
+        "Var2": "73.5"
+    },
+    {
+        "Var1": "BTKB-FLU",
+        "Var2": "80"
+    },
+    {
+        "Var1": "BTKB-STB",
+        "Var2": "79"
+    },
+    {
+        "Var1": "BTPG-GOF",
+        "Var2": "77.75"
+    },
+    {
+        "Var1": "BTPG-TLX",
+        "Var2": "80"
+    },
+    {
+        "Var1": "BTY-MGM",
+        "Var2": "91"
+    },
+    {
+        "Var1": "BTY-SVH",
+        "Var2": "89.3333"
+    },
+    {
+        "Var1": "BZB-BBDB",
+        "Var2": "34"
+    },
+    {
+        "Var1": "BZB-SOLA",
+        "Var2": "36.5"
+    },
+    {
+        "Var1": "CCLW-CCRL",
+        "Var2": "63.75"
+    },
+    {
+        "Var1": "CCLW-DKAE",
+        "Var2": "66.6667"
+    },
+    {
+        "Var1": "CCRL-CCLW",
+        "Var2": "64.6667"
+    },
+    {
+        "Var1": "CCRL-DKAE",
+        "Var2": "71"
+    },
+    {
+        "Var1": "CCRL-RCD",
+        "Var2": "52"
+    },
+    {
+        "Var1": "CDH-PDX",
+        "Var2": "92"
+    },
+    {
+        "Var1": "CDH-PXR",
+        "Var2": "71.25"
+    },
+    {
+        "Var1": "CDP-BNAA",
+        "Var2": "88.75"
+    },
+    {
+        "Var1": "CDP-TKNR",
+        "Var2": "83.25"
+    },
+    {
+        "Var1": "CG-TLX",
+        "Var2": "80"
+    },
+    {
+        "Var1": "CHT-KLKR",
+        "Var2": "62.75"
+    },
+    {
+        "Var1": "CHT-PLF",
+        "Var2": "77.25"
+    },
+    {
+        "Var1": "CPHT-NBRN",
+        "Var2": "77.75"
+    },
+    {
+        "Var1": "CPHT-RHA",
+        "Var2": "72.75"
+    },
+    {
+        "Var1": "CQR-BBLA",
+        "Var2": "87.25"
+    },
+    {
+        "Var1": "CQR-GGV",
+        "Var2": "77.25"
+    },
+    {
+        "Var1": "CSZ-BPC",
+        "Var2": "73"
+    },
+    {
+        "Var1": "CSZ-MBB",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "D-NTA",
+        "Var2": "78.25"
+    },
+    {
+        "Var1": "D-SNU",
+        "Var2": "80.5"
+    },
+    {
+        "Var1": "DAKE-BARN",
+        "Var2": "68.75"
+    },
+    {
+        "Var1": "DAKE-BLYG",
+        "Var2": "64.75"
+    },
+    {
+        "Var1": "DBT-BARU",
+        "Var2": "75.5"
+    },
+    {
+        "Var1": "DBT-HGA",
+        "Var2": "78.25"
+    },
+    {
+        "Var1": "DDC-DDJ",
+        "Var2": "63"
+    },
+    {
+        "Var1": "DDC-DGNR",
+        "Var2": "73"
+    },
+    {
+        "Var1": "DDJ-BARN",
+        "Var2": "82"
+    },
+    {
+        "Var1": "DDJ-BLH",
+        "Var2": "90.5"
+    },
+    {
+        "Var1": "DDJ-BNXR",
+        "Var2": "75.75"
+    },
+    {
+        "Var1": "DDJ-DDC",
+        "Var2": "64.5"
+    },
+    {
+        "Var1": "DDJ-PTKR",
+        "Var2": "37.5"
+    },
+    {
+        "Var1": "DEB-PCX",
+        "Var2": "88.6667"
+    },
+    {
+        "Var1": "DEB-SVH",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "DGNR-BBT",
+        "Var2": "55.25"
+    },
+    {
+        "Var1": "DGNR-DDC",
+        "Var2": "67.75"
+    },
+    {
+        "Var1": "DH-GURN",
+        "Var2": "71.5"
+    },
+    {
+        "Var1": "DHK-BLN",
+        "Var2": "53"
+    },
+    {
+        "Var1": "DHK-JDP",
+        "Var2": "68.75"
+    },
+    {
+        "Var1": "DHU-BPD",
+        "Var2": "90"
+    },
+    {
+        "Var1": "DHU-MGM",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "DKAE-CCLW",
+        "Var2": "72"
+    },
+    {
+        "Var1": "DKAE-GBRA",
+        "Var2": "71"
+    },
+    {
+        "Var1": "DKDP-HT",
+        "Var2": "65"
+    },
+    {
+        "Var1": "DKDP-KYP",
+        "Var2": "73.5"
+    },
+    {
+        "Var1": "DMU-HT",
+        "Var2": "73.75"
+    },
+    {
+        "Var1": "DMU-UTN",
+        "Var2": "76.75"
+    },
+    {
+        "Var1": "DPDP-KRXM",
+        "Var2": "57"
+    },
+    {
+        "Var1": "DPDP-SJPR",
+        "Var2": "77"
+    },
+    {
+        "Var1": "DTK-BIRA",
+        "Var2": "85.25"
+    },
+    {
+        "Var1": "DTK-BMG",
+        "Var2": "81.25"
+    },
+    {
+        "Var1": "EDG-BBDB",
+        "Var2": "37"
+    },
+    {
+        "Var1": "EDG-PPGT",
+        "Var2": "38.3333"
+    },
+    {
+        "Var1": "FLU-BTKB",
+        "Var2": "80"
+    },
+    {
+        "Var1": "FLU-HBE",
+        "Var2": "81"
+    },
+    {
+        "Var1": "GBG-MSL",
+        "Var2": "77.25"
+    },
+    {
+        "Var1": "GBG-TKNR",
+        "Var2": "87.75"
+    },
+    {
+        "Var1": "GBRA-DKAE",
+        "Var2": "68"
+    },
+    {
+        "Var1": "GBRA-JOX",
+        "Var2": "79"
+    },
+    {
+        "Var1": "GCN-HGA",
+        "Var2": "77.5"
+    },
+    {
+        "Var1": "GCN-SJPR",
+        "Var2": "69"
+    },
+    {
+        "Var1": "GEDE-HRSR",
+        "Var2": "74.75"
+    },
+    {
+        "Var1": "GFAE-HYG",
+        "Var2": "39"
+    },
+    {
+        "Var1": "GFAE-NHLC",
+        "Var2": "50.25"
+    },
+    {
+        "Var1": "GGP-MAJ",
+        "Var2": "89.5"
+    },
+    {
+        "Var1": "GGP-NBRN",
+        "Var2": "89"
+    },
+    {
+        "Var1": "GGV-CQR",
+        "Var2": "76.25"
+    },
+    {
+        "Var1": "GGV-MPE",
+        "Var2": "70.5"
+    },
+    {
+        "Var1": "GIA-NGRI",
+        "Var2": "58.25"
+    },
+    {
+        "Var1": "GIA-NRPR",
+        "Var2": "70.75"
+    },
+    {
+        "Var1": "GN-AKIP",
+        "Var2": "89"
+    },
+    {
+        "Var1": "GN-STBB",
+        "Var2": "88.75"
+    },
+    {
+        "Var1": "GOF-BTPG",
+        "Var2": "78.5"
+    },
+    {
+        "Var1": "GOF-GQD",
+        "Var2": "74.5"
+    },
+    {
+        "Var1": "GQD-GOF",
+        "Var2": "73.25"
+    },
+    {
+        "Var1": "GQD-PLF",
+        "Var2": "72.75"
+    },
+    {
+        "Var1": "GUMA-ASKR",
+        "Var2": "82"
+    },
+    {
+        "Var1": "GUMA-BIRA",
+        "Var2": "79"
+    },
+    {
+        "Var1": "GURN-BSD",
+        "Var2": "74"
+    },
+    {
+        "Var1": "GURN-DH",
+        "Var2": "72.5"
+    },
+    {
+        "Var1": "HB-ASKR",
+        "Var2": "75.75"
+    },
+    {
+        "Var1": "HB-SNHT",
+        "Var2": "89"
+    },
+    {
+        "Var1": "HBE-FLU",
+        "Var2": "80.3333"
+    },
+    {
+        "Var1": "HBE-KLNP",
+        "Var2": "73.3333"
+    },
+    {
+        "Var1": "HGA-DBT",
+        "Var2": "78.25"
+    },
+    {
+        "Var1": "HGA-GCN",
+        "Var2": "76.25"
+    },
+    {
+        "Var1": "HHR-BT",
+        "Var2": "69"
+    },
+    {
+        "Var1": "HHR-MMG",
+        "Var2": "76.5"
+    },
+    {
+        "Var1": "HLR-KPA",
+        "Var2": "72"
+    },
+    {
+        "Var1": "HLR-KPAW",
+        "Var2": "65.75"
+    },
+    {
+        "Var1": "HLR-NH",
+        "Var2": "84.5"
+    },
+    {
+        "Var1": "HNB-TKF",
+        "Var2": "62.75"
+    },
+    {
+        "Var1": "HRO-BSLA",
+        "Var2": "82"
+    },
+    {
+        "Var1": "HRO-KMZA",
+        "Var2": "83.5"
+    },
+    {
+        "Var1": "HRSR-BPN",
+        "Var2": "77.75"
+    },
+    {
+        "Var1": "HRSR-GEDE",
+        "Var2": "71.5"
+    },
+    {
+        "Var1": "HT-DKDP",
+        "Var2": "70.5"
+    },
+    {
+        "Var1": "HT-DMU",
+        "Var2": "74.5"
+    },
+    {
+        "Var1": "HYG-BDC",
+        "Var2": "55.25"
+    },
+    {
+        "Var1": "HYG-GFAE",
+        "Var2": "40.75"
+    },
+    {
+        "Var1": "IP-PTF",
+        "Var2": "73"
+    },
+    {
+        "Var1": "IP-SNR",
+        "Var2": "76.5"
+    },
+    {
+        "Var1": "JDP-BGJT",
+        "Var2": "70.75"
+    },
+    {
+        "Var1": "JDP-DHK",
+        "Var2": "56"
+    },
+    {
+        "Var1": "JGDL-KNR",
+        "Var2": "72.5"
+    },
+    {
+        "Var1": "JGDL-SNR",
+        "Var2": "73.5"
+    },
+    {
+        "Var1": "JJG-MBB",
+        "Var2": "91"
+    },
+    {
+        "Var1": "JJG-SBNM",
+        "Var2": "89.3333"
+    },
+    {
+        "Var1": "JKL-BDZ",
+        "Var2": "91.75"
+    },
+    {
+        "Var1": "JKL-KNJ",
+        "Var2": "88.5"
+    },
+    {
+        "Var1": "JNM-BARU",
+        "Var2": "80.25"
+    },
+    {
+        "Var1": "JNM-MPRD",
+        "Var2": "78"
+    },
+    {
+        "Var1": "JOX-BPAE",
+        "Var2": "72"
+    },
+    {
+        "Var1": "JOX-GBRA",
+        "Var2": "82"
+    },
+    {
+        "Var1": "KBGH-BHKA",
+        "Var2": "85"
+    },
+    {
+        "Var1": "KBGH-KZPR",
+        "Var2": "83"
+    },
+    {
+        "Var1": "KDH-SEP",
+        "Var2": "83.5"
+    },
+    {
+        "Var1": "KDH-TGH",
+        "Var2": "58.5"
+    },
+    {
+        "Var1": "KGK-BNXR",
+        "Var2": "76.5"
+    },
+    {
+        "Var1": "KGK-SDAH",
+        "Var2": "44"
+    },
+    {
+        "Var1": "KGK-SGBA",
+        "Var2": "30.5"
+    },
+    {
+        "Var1": "KHGR-KWDP",
+        "Var2": "76.3333"
+    },
+    {
+        "Var1": "KHGR-MDGB",
+        "Var2": "80"
+    },
+    {
+        "Var1": "KHGR-NCP",
+        "Var2": "81"
+    },
+    {
+        "Var1": "KIRP-PPGT",
+        "Var2": "41.5"
+    },
+    {
+        "Var1": "KIRP-RMTR",
+        "Var2": "40.3333"
+    },
+    {
+        "Var1": "KLKR-BDYP",
+        "Var2": "66.25"
+    },
+    {
+        "Var1": "KLKR-CHT",
+        "Var2": "71.25"
+    },
+    {
+        "Var1": "KLNP-BIJ",
+        "Var2": "87.25"
+    },
+    {
+        "Var1": "KLNP-HBE",
+        "Var2": "79"
+    },
+    {
+        "Var1": "KLNP-RHA",
+        "Var2": "64.5"
+    },
+    {
+        "Var1": "KLW-KNJI",
+        "Var2": "80.6667"
+    },
+    {
+        "Var1": "KLW-URP",
+        "Var2": "79"
+    },
+    {
+        "Var1": "KLYG-KLYM",
+        "Var2": "57"
+    },
+    {
+        "Var1": "KLYG-KLYS",
+        "Var2": "60"
+    },
+    {
+        "Var1": "KLYM-KLYG",
+        "Var2": "54.5"
+    },
+    {
+        "Var1": "KLYS-KLYG",
+        "Var2": "60"
+    },
+    {
+        "Var1": "KLYS-KYI",
+        "Var2": "54"
+    },
+    {
+        "Var1": "KMZA-HRO",
+        "Var2": "82.5"
+    },
+    {
+        "Var1": "KMZA-MPE",
+        "Var2": "85.75"
+    },
+    {
+        "Var1": "KNJ-BPD",
+        "Var2": "86"
+    },
+    {
+        "Var1": "KNJ-JKL",
+        "Var2": "91.5"
+    },
+    {
+        "Var1": "KNJI-KLW",
+        "Var2": "80"
+    },
+    {
+        "Var1": "KNJI-NCPM",
+        "Var2": "81"
+    },
+    {
+        "Var1": "KNR-JGDL",
+        "Var2": "70.25"
+    },
+    {
+        "Var1": "KNR-NH",
+        "Var2": "72.5"
+    },
+    {
+        "Var1": "KOAA-PTKR",
+        "Var2": "40"
+    },
+    {
+        "Var1": "KOAA-TALA",
+        "Var2": "37"
+    },
+    {
+        "Var1": "KPA-KPAW",
+        "Var2": "60"
+    },
+    {
+        "Var1": "KPA-KYI",
+        "Var2": "64.75"
+    },
+    {
+        "Var1": "KPAW-HLR",
+        "Var2": "66"
+    },
+    {
+        "Var1": "KPAW-KPA",
+        "Var2": "70"
+    },
+    {
+        "Var1": "KRP-LGL",
+        "Var2": "55"
+    },
+    {
+        "Var1": "KRP-PRTL",
+        "Var2": "90.3333"
+    },
+    {
+        "Var1": "KRXM-DPDP",
+        "Var2": "67.75"
+    },
+    {
+        "Var1": "KRXM-SSRD",
+        "Var2": "74.75"
+    },
+    {
+        "Var1": "KWDP-KHGR",
+        "Var2": "78"
+    },
+    {
+        "Var1": "KWDP-UKLR",
+        "Var2": "80"
+    },
+    {
+        "Var1": "KYI-KLYS",
+        "Var2": "56.5"
+    },
+    {
+        "Var1": "KYI-KPA",
+        "Var2": "81"
+    },
+    {
+        "Var1": "KYI-MPJ",
+        "Var2": "76.25"
+    },
+    {
+        "Var1": "KYP-BRP",
+        "Var2": "70"
+    },
+    {
+        "Var1": "KYP-DKDP",
+        "Var2": "62.75"
+    },
+    {
+        "Var1": "KZPR-BT",
+        "Var2": "71.25"
+    },
+    {
+        "Var1": "KZPR-KBGH",
+        "Var2": "78.25"
+    },
+    {
+        "Var1": "LBTL-BGRD",
+        "Var2": "85"
+    },
+    {
+        "Var1": "LBTL-BSLA",
+        "Var2": "72.5"
+    },
+    {
+        "Var1": "LGL-KRP",
+        "Var2": "29.3333"
+    },
+    {
+        "Var1": "LKF-BLN",
+        "Var2": "69"
+    },
+    {
+        "Var1": "LKF-MILE",
+        "Var2": "41.75"
+    },
+    {
+        "Var1": "LKPR-MDBP",
+        "Var2": "74.5"
+    },
+    {
+        "Var1": "LKPR-URP",
+        "Var2": "79.3333"
+    },
+    {
+        "Var1": "MAJ-AKIP",
+        "Var2": "85.5"
+    },
+    {
+        "Var1": "MAJ-GGP",
+        "Var2": "89.75"
+    },
+    {
+        "Var1": "MAK-BRP",
+        "Var2": "73"
+    },
+    {
+        "Var1": "MAK-SBGR",
+        "Var2": "69.5"
+    },
+    {
+        "Var1": "MBB-CSZ",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "MBB-JJG",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "MDBP-LKPR",
+        "Var2": "61.75"
+    },
+    {
+        "Var1": "MDBP-MPRD",
+        "Var2": "79.75"
+    },
+    {
+        "Var1": "MDGB-KHGR",
+        "Var2": "80"
+    },
+    {
+        "Var1": "MDGB-NCP",
+        "Var2": "80"
+    },
+    {
+        "Var1": "MGM-BTY",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "MGM-DHU",
+        "Var2": "88.6667"
+    },
+    {
+        "Var1": "MGT-BHPA",
+        "Var2": "77"
+    },
+    {
+        "Var1": "MGT-UTN",
+        "Var2": "78.5"
+    },
+    {
+        "Var1": "MIJ-BPN",
+        "Var2": "94"
+    },
+    {
+        "Var1": "MIJ-TNX",
+        "Var2": "94.25"
+    },
+    {
+        "Var1": "MILE-LKF",
+        "Var2": "12"
+    },
+    {
+        "Var1": "MILE-TLG",
+        "Var2": "33.5"
+    },
+    {
+        "Var1": "MJT-BRJ",
+        "Var2": "71.25"
+    },
+    {
+        "Var1": "MJT-NACC",
+        "Var2": "58"
+    },
+    {
+        "Var1": "MJT-RMTR",
+        "Var2": "37"
+    },
+    {
+        "Var1": "MMG-HHR",
+        "Var2": "67"
+    },
+    {
+        "Var1": "MMG-NBE",
+        "Var2": "60.75"
+    },
+    {
+        "Var1": "MPE-GGV",
+        "Var2": "65.75"
+    },
+    {
+        "Var1": "MPE-KMZA",
+        "Var2": "87.75"
+    },
+    {
+        "Var1": "MPJ-KYI",
+        "Var2": "77.75"
+    },
+    {
+        "Var1": "MPJ-SMX",
+        "Var2": "88.25"
+    },
+    {
+        "Var1": "MPN-MTAP",
+        "Var2": "74.25"
+    },
+    {
+        "Var1": "MPN-NMDR",
+        "Var2": "68.75"
+    },
+    {
+        "Var1": "MPRD-JNM",
+        "Var2": "79.25"
+    },
+    {
+        "Var1": "MPRD-MDBP",
+        "Var2": "63"
+    },
+    {
+        "Var1": "MSL-GBG",
+        "Var2": "76.5"
+    },
+    {
+        "Var1": "MSL-SNHT",
+        "Var2": "88.5"
+    },
+    {
+        "Var1": "MTAP-BSHT",
+        "Var2": "72.5"
+    },
+    {
+        "Var1": "MTAP-MPN",
+        "Var2": "73"
+    },
+    {
+        "Var1": "MYHT-BGL",
+        "Var2": "85.75"
+    },
+    {
+        "Var1": "MYHT-TNX",
+        "Var2": "60.25"
+    },
+    {
+        "Var1": "NACC-MJT",
+        "Var2": "48"
+    },
+    {
+        "Var1": "NACC-TLG",
+        "Var2": "35.25"
+    },
+    {
+        "Var1": "NAI-AKRA",
+        "Var2": "73"
+    },
+    {
+        "Var1": "NAI-BGB",
+        "Var2": "70.25"
+    },
+    {
+        "Var1": "NBE-BRPK",
+        "Var2": "67"
+    },
+    {
+        "Var1": "NBE-MMG",
+        "Var2": "53"
+    },
+    {
+        "Var1": "NBPH-BPC",
+        "Var2": "84.3333"
+    },
+    {
+        "Var1": "NBPH-SGV",
+        "Var2": "80"
+    },
+    {
+        "Var1": "NBRN-CPHT",
+        "Var2": "77"
+    },
+    {
+        "Var1": "NBRN-GGP",
+        "Var2": "89"
+    },
+    {
+        "Var1": "NCP-KNJI",
+        "Var2": "81"
+    },
+    {
+        "Var1": "NCP-MDGB",
+        "Var2": "80"
+    },
+    {
+        "Var1": "NCP-NCPM",
+        "Var2": "67.5"
+    },
+    {
+        "Var1": "NCPM-KNJI",
+        "Var2": "81"
+    },
+    {
+        "Var1": "NCPM-NCP",
+        "Var2": "66"
+    },
+    {
+        "Var1": "NGRI-BGJT",
+        "Var2": "65.25"
+    },
+    {
+        "Var1": "NGRI-GIA",
+        "Var2": "58.75"
+    },
+    {
+        "Var1": "NH-HLR",
+        "Var2": "82.5"
+    },
+    {
+        "Var1": "NH-KNR",
+        "Var2": "76.75"
+    },
+    {
+        "Var1": "NH-NHLC",
+        "Var2": "53.5"
+    },
+    {
+        "Var1": "NHLC-GFAE",
+        "Var2": "50.25"
+    },
+    {
+        "Var1": "NHLC-NH",
+        "Var2": "53.25"
+    },
+    {
+        "Var1": "NMDR-MPN",
+        "Var2": "70.5"
+    },
+    {
+        "Var1": "NMDR-TKF",
+        "Var2": "79.25"
+    },
+    {
+        "Var1": "NMKA-UKLR",
+        "Var2": "80"
+    },
+    {
+        "Var1": "NRPR-GIA",
+        "Var2": "69.75"
+    },
+    {
+        "Var1": "NRPR-SPR",
+        "Var2": "54.75"
+    },
+    {
+        "Var1": "NTA-BSD",
+        "Var2": "74.25"
+    },
+    {
+        "Var1": "NTA-D",
+        "Var2": "77.75"
+    },
+    {
+        "Var1": "PCX-DEB",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "PCX-PLY",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "PDX-CDH",
+        "Var2": "92.75"
+    },
+    {
+        "Var1": "PDX-RHA",
+        "Var2": "87.75"
+    },
+    {
+        "Var1": "PLF-CHT",
+        "Var2": "77.5"
+    },
+    {
+        "Var1": "PLF-GQD",
+        "Var2": "72.75"
+    },
+    {
+        "Var1": "PLY-PCX",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "PLY-SRJN",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "PNCB-AG",
+        "Var2": "82.75"
+    },
+    {
+        "Var1": "PNCB-BNKA",
+        "Var2": "69.75"
+    },
+    {
+        "Var1": "PPGT-EDG",
+        "Var2": "39"
+    },
+    {
+        "Var1": "PPGT-KIRP",
+        "Var2": "41"
+    },
+    {
+        "Var1": "PQS-BLN",
+        "Var2": "66"
+    },
+    {
+        "Var1": "PQS-SDAH",
+        "Var2": "63"
+    },
+    {
+        "Var1": "PQS-SGBA",
+        "Var2": "34"
+    },
+    {
+        "Var1": "PRTL-BQG",
+        "Var2": "84.3333"
+    },
+    {
+        "Var1": "PRTL-KRP",
+        "Var2": "89.3333"
+    },
+    {
+        "Var1": "PTF-BP",
+        "Var2": "65.75"
+    },
+    {
+        "Var1": "PTF-IP",
+        "Var2": "71.75"
+    },
+    {
+        "Var1": "PTKR-DDJ",
+        "Var2": "33"
+    },
+    {
+        "Var1": "PTKR-KOAA",
+        "Var2": "40"
+    },
+    {
+        "Var1": "PXR-CDH",
+        "Var2": "70.75"
+    },
+    {
+        "Var1": "PXR-SMX",
+        "Var2": "77.25"
+    },
+    {
+        "Var1": "RCD-BLYH",
+        "Var2": "72.25"
+    },
+    {
+        "Var1": "RCD-CCLW",
+        "Var2": "64"
+    },
+    {
+        "Var1": "RCD-CCRL",
+        "Var2": "45.3333"
+    },
+    {
+        "Var1": "REJ-BEB",
+        "Var2": "81.6667"
+    },
+    {
+        "Var1": "REJ-SRJN",
+        "Var2": "88.6667"
+    },
+    {
+        "Var1": "RHA-BNKA",
+        "Var2": "88"
+    },
+    {
+        "Var1": "RHA-CPHT",
+        "Var2": "76.75"
+    },
+    {
+        "Var1": "RHA-KLNP",
+        "Var2": "70.75"
+    },
+    {
+        "Var1": "RHA-PDX",
+        "Var2": "84.6667"
+    },
+    {
+        "Var1": "RMTR-KIRP",
+        "Var2": "40"
+    },
+    {
+        "Var1": "RMTR-MJT",
+        "Var2": "37"
+    },
+    {
+        "Var1": "SBGR-MAK",
+        "Var2": "69.75"
+    },
+    {
+        "Var1": "SBGR-SPR",
+        "Var2": "77.75"
+    },
+    {
+        "Var1": "SBNM-BQG",
+        "Var2": "89"
+    },
+    {
+        "Var1": "SBNM-JJG",
+        "Var2": "90.6667"
+    },
+    {
+        "Var1": "SDAH-BNXR",
+        "Var2": "78"
+    },
+    {
+        "Var1": "SDAH-KGK",
+        "Var2": "60.5"
+    },
+    {
+        "Var1": "SDAH-PQS",
+        "Var2": "60"
+    },
+    {
+        "Var1": "SEP-AGP",
+        "Var2": "69.75"
+    },
+    {
+        "Var1": "SEP-KDH",
+        "Var2": "74.75"
+    },
+    {
+        "Var1": "SGBA-KGK",
+        "Var2": "26"
+    },
+    {
+        "Var1": "SGBA-PQS",
+        "Var2": "32.5"
+    },
+    {
+        "Var1": "SGV-BFT",
+        "Var2": "81.6667"
+    },
+    {
+        "Var1": "SGV-NBPH",
+        "Var2": "87.6667"
+    },
+    {
+        "Var1": "SJPR-DPDP",
+        "Var2": "70.5"
+    },
+    {
+        "Var1": "SJPR-GCN",
+        "Var2": "70.75"
+    },
+    {
+        "Var1": "SMX-MPJ",
+        "Var2": "86.25"
+    },
+    {
+        "Var1": "SMX-PXR",
+        "Var2": "77.5"
+    },
+    {
+        "Var1": "SNHT-HB",
+        "Var2": "86.75"
+    },
+    {
+        "Var1": "SNHT-MSL",
+        "Var2": "88"
+    },
+    {
+        "Var1": "SNR-IP",
+        "Var2": "80.5"
+    },
+    {
+        "Var1": "SNR-JGDL",
+        "Var2": "78.75"
+    },
+    {
+        "Var1": "SNTR-BHGH",
+        "Var2": "75.3333"
+    },
+    {
+        "Var1": "SNTR-BHNA",
+        "Var2": "75.3333"
+    },
+    {
+        "Var1": "SNU-BHPA",
+        "Var2": "73.75"
+    },
+    {
+        "Var1": "SNU-D",
+        "Var2": "80.75"
+    },
+    {
+        "Var1": "SOLA-BBR",
+        "Var2": "37.5"
+    },
+    {
+        "Var1": "SOLA-BZB",
+        "Var2": "38"
+    },
+    {
+        "Var1": "SPR-BDYP",
+        "Var2": "75"
+    },
+    {
+        "Var1": "SPR-NRPR",
+        "Var2": "64.75"
+    },
+    {
+        "Var1": "SPR-SBGR",
+        "Var2": "83"
+    },
+    {
+        "Var1": "SRJN-PLY",
+        "Var2": "90"
+    },
+    {
+        "Var1": "SRJN-REJ",
+        "Var2": "88.6667"
+    },
+    {
+        "Var1": "SSP-AKRA",
+        "Var2": "70"
+    },
+    {
+        "Var1": "SSP-BRJ",
+        "Var2": "71.75"
+    },
+    {
+        "Var1": "SSRD-BRP",
+        "Var2": "58.5"
+    },
+    {
+        "Var1": "SSRD-KRXM",
+        "Var2": "75"
+    },
+    {
+        "Var1": "STB-BTKB",
+        "Var2": "74.25"
+    },
+    {
+        "Var1": "STBB-BNJ",
+        "Var2": "80.75"
+    },
+    {
+        "Var1": "STBB-GN",
+        "Var2": "88.5"
+    },
+    {
+        "Var1": "SVH-BTY",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "SVH-DEB",
+        "Var2": "89.6667"
+    },
+    {
+        "Var1": "SXC-BGRD",
+        "Var2": "77.5"
+    },
+    {
+        "Var1": "SXC-BHKA",
+        "Var2": "74"
+    },
+    {
+        "Var1": "TALA-BBR",
+        "Var2": "38.5"
+    },
+    {
+        "Var1": "TALA-KOAA",
+        "Var2": "32"
+    },
+    {
+        "Var1": "TGH-BP",
+        "Var2": "63.75"
+    },
+    {
+        "Var1": "TGH-KDH",
+        "Var2": "61.5"
+    },
+    {
+        "Var1": "THP-BDZ",
+        "Var2": "92.25"
+    },
+    {
+        "Var1": "THP-BIJ",
+        "Var2": "83"
+    },
+    {
+        "Var1": "TKF-HNB",
+        "Var2": "62.5"
+    },
+    {
+        "Var1": "TKF-NMDR",
+        "Var2": "79.25"
+    },
+    {
+        "Var1": "TKNR-CDP",
+        "Var2": "82.25"
+    },
+    {
+        "Var1": "TKNR-GBG",
+        "Var2": "89"
+    },
+    {
+        "Var1": "TLG-MILE",
+        "Var2": "29.25"
+    },
+    {
+        "Var1": "TLG-NACC",
+        "Var2": "39.75"
+    },
+    {
+        "Var1": "TLX-BTPG",
+        "Var2": "79.25"
+    },
+    {
+        "Var1": "TLX-CG",
+        "Var2": "80.5"
+    },
+    {
+        "Var1": "TNX-MIJ",
+        "Var2": "92.5"
+    },
+    {
+        "Var1": "TNX-MYHT",
+        "Var2": "81.75"
+    },
+    {
+        "Var1": "UKLR-KWDP",
+        "Var2": "81"
+    },
+    {
+        "Var1": "UKLR-NMKA",
+        "Var2": "80"
+    },
+    {
+        "Var1": "URP-KLW",
+        "Var2": "78.3333"
+    },
+    {
+        "Var1": "URP-LKPR",
+        "Var2": "79"
+    },
+    {
+        "Var1": "UTN-DMU",
+        "Var2": "75.75"
+    },
+    {
+        "Var1": "UTN-MGT",
+        "Var2": "79"
+    }
+]
