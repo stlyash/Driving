@@ -1,5 +1,9 @@
 let selectedFile;
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 document.getElementById('input1').addEventListener("change", (event) => {
     selectedFile = event.target.files[0];
 })
@@ -15,8 +19,9 @@ let data=[{
 }]
 
 
+var fast_points = 0;
 document.getElementById('button1').addEventListener("click", () => {
-
+//window.score = 0;
   // Dictionary containing all the ams values of all sections
   
   var stncod = [];
@@ -34,6 +39,7 @@ document.getElementById('button1').addEventListener("click", () => {
     {
       ams_per -= 10;
     }
+    window.amsper = ams_per;
 
   // Reading brake power test ranges
   const bf_prange = Number(document.getElementById('inp_bfrange').value)
@@ -52,13 +58,19 @@ document.getElementById('button1').addEventListener("click", () => {
         ctrObject = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
         window.tlower = (ctrObject[0].sch_dep).toString()
         window.tupper = (ctrObject[(ctrObject.length)-1].act_arr).toString()
+        window.acDep = []
+        window.acArr = []
         for (let i = 0; i < (ctrObject.length)- 1; i++)
         {
           var k = (ctrObject[i].stn_code).toString() + "-" + ((ctrObject)[i+1].stn_code).toString()
           stncod[i] = k;
-          secmax[i] = Number(ctrObject[i].sec_max_speed)
+          secmax[i] = Number(ctrObject[i+1].sec_max_speed)
+          window.acDep[i] = (ctrObject[i].act_dep).toString()
+          window.acArr[i] = (ctrObject[i+1].act_arr).toString()
         }
         window.smax = secmax;
+        
+        
 
         var stations = ctrObject.length;
         var sections = ctrObject.length -1;
@@ -83,6 +95,8 @@ document.getElementById('button1').addEventListener("click", () => {
         let trObject = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
         let date = []
         let speed = []
+        window.sp = []
+        window.secams = []
         ind = 0;
         for (let i = 5; i < trObject.length; i++)
         {
@@ -91,14 +105,17 @@ document.getElementById('button1').addEventListener("click", () => {
           date[ind].setMinutes(date[ind].getMinutes() + 30);
           speed[ind] = 1.852 * Number((trObject[i].__EMPTY_3).substring(0,(trObject[i].__EMPTY_3).length - 3));
           ind = ind + 1;
+          window.sp[ind] = 1.852 * Number((trObject[i].__EMPTY_3).substring(0,(trObject[i].__EMPTY_3).length - 3));
         }
+        
+        
 
         let lmax = [];
         let lmin = [];
         
         var amsdic = {};
         async function getjson(){
-          // Hourly analysis (Lowering ams percentage according to crowd density)
+        
           var wea = document.getElementsByName('weather');
           if (wea[1].checked)
           { 
@@ -123,22 +140,25 @@ document.getElementById('button1').addEventListener("click", () => {
           {
             amsdic[(jsdata[n].Var1).toString()] = Number(jsdata[n].Var2)
           }
-          console.log(stncod)
           var ams_ach = 0;
           var ams_not_ach = 0;
           window.scode = stncod;
           // Array containing ams between stations
           var sec_ams = []
+        
           for (var p = 0; p < (window.scode).length; p++)
           {
             if((window.scode)[p] in amsdic)
             {
               sec_ams[p] = amsdic[(window.scode)[p]]
+              window.secams[p] = sec_ams[p]
             }
             else
             { //scam
               sec_ams[p] = 80
+              window.secams[p] = 80
             }
+
             if (window.smax[p] > sec_ams[p])
             {
               ams_ach += 1;
@@ -148,14 +168,63 @@ document.getElementById('button1').addEventListener("click", () => {
               ams_not_ach += 1;
             }
           }
+          window.fast_points = 0;
+
+          for(let sec = 0; sec < (window.acDep).length ; sec++)
+          {
+
+          window.s1 = window.acDep[sec].toString()
+          window.s2 = window.acArr[sec].toString()
+          ind_tlow = new Date(date[1]);
+          ind_tup = new Date(date[1]); 
+          ind_tlow.setHours((window.s1[0]+window.s1[1]))
+          ind_tlow.setMinutes((window.s1[3]+window.s1[4]))
+          ind_tlow.setSeconds((window.s1[6]+window.s1[7]))
+          ind_tup.setHours((window.s2[0]+window.s2[1]))
+          ind_tup.setMinutes((window.s2[3]+window.s2[4]))
+          ind_tup.setSeconds((window.s2[6]+window.s2[7]))
+
+          //window.lsec = date.indexOf(ind_tlow)
+          //window.usec = date.indexOf(ind_tup)
+          
+          // finding lower data point of the section
+          window.indica = 0;
+          for (var lp = 0; lp < date.length; lp++)
+          {
+            if (window.indica == 0 && date[lp] > ind_tlow)
+            {
+              window.lsec = lp-1;
+              window.indica = 1;
+            }
+            if (window.indica == 1 && date[lp] > ind_tup)
+            {
+              window.usec = lp+1;
+              window.indica = 2;
+            }
+          }
+          window.totime = 0;
+          for (var dpts = window.lsec; dpts <= window.usec; dpts++)
+          {
+            window.totime += 1;
+            if(window.sp[dpts] >= window.amsper * window.secams[sec] * 0.01)
+            {
+              window.fast_points += 1;
+            }
+          }
+          }
+          document.getElementById("fast_time").innerHTML = ("Data Points in which speed is more than "+ (window.amsper).toString() +"% of the AMS: " + (window.fast_points.toString()))
+          document.getElementById("total_time").innerHTML = ("Total number of Data Points when the train was moving: " + (window.totime).toString())
+
+          // Adding ratio of total number of Datapoints where the speed is more than threshold percentage and the total datapoints when the train is moving to the score
+         // window.score += (window.fast_points/window.totime)
+          // Adding ratio of total sections in which the AMS is achieved and the total number of sections in the score
+         // window.score += (ams_ach/(ams_not_ach + ams_ach))
           document.getElementById("sec_ach").innerHTML = ("Sections in which AMS is achieved: " + ams_ach.toString())
           document.getElementById("sec_not_ach").innerHTML = ("Sections in whihch failed to achieve AMS: " + ams_not_ach.toString())
         }
         getjson();
         
         
-
-
 
 
         // reading maxima
@@ -319,10 +388,9 @@ document.getElementById('button1').addEventListener("click", () => {
         }
 
 
-        var score = 0;
         var bp_prange = Number(document.getElementById("inp_bprange").value)
         var bf_prange = Number(document.getElementById("inp_bfrange").value)
-
+        
         // Displaying Result of Brake tests
         if (indbrake == 3)
         {
@@ -332,13 +400,13 @@ document.getElementById('button1').addEventListener("click", () => {
         {   
           if (bp_range < bp_prange)
           {
-            score = score + 0.2;
+           // window.score += 0.2;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Power test is done and it is not done in prescribed range.")
             document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (brake_p_high).toString() + " to "+ num2str(brake_p_low) + " KMPH.")
           }
           else
           {
-            score = score + 0.5;
+          //  window.score += 0.5;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Power test is done and it is done in prescribed range.")
             document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (brake_p_high).toString() + " to "+ (brake_p_low).toString() + " KMPH.")
           }
@@ -347,13 +415,13 @@ document.getElementById('button1').addEventListener("click", () => {
         {    
           if (bf_range < bf_prange)
           {
-            score = score + 0.2;
+          //  window.score += 0.2;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Feel test is done and it is not done in prescribed range.")
             document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (brake_f_high).toString() + " to " + (brake_f_low).toString() + " KMPH.")
           }
           else
           {
-            score = score + 0.5;
+           // window.score += 0.5;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Feel test is done and it is done in prescribed range.")
             document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (brake_f_high).toString() + " to " + (brake_f_low).toString() + " KMPH.")
           }
@@ -362,34 +430,36 @@ document.getElementById('button1').addEventListener("click", () => {
         {
           if (bf_range < bf_prange && bp_range < bp_prange)
           {
-            score = score + 0.4;
+          //  window.score += 0.4;
             document.getElementById("bRemarks").innerHTML = ("Brake tests are not done in prescribed range.")
           }
           else if (bf_range < bf_prange)
           {
-            score = score + 0.7;
+           // window.score += 0.7;
             document.getElementById("bRemarks").innerHTML = ("Brake Power test done properly, but Brake Feel test is not done in prescribed range.")
           }
           else if (bp_range < bp_prange)
           {
-            score = score + 0.7;
+           // window.score += 0.7;
             document.getElementById("bRemarks").innerHTML = ("Brake Feel test done properly, but Brake Power test is not done in prescribed range.")
           }
           else
           {
             document.getElementById("bRemarks").innerHTML = ("Brake Feel and Brake Power tests are done in prescribed range.")
-            score = score + 1;
+          //  window.score += 1;
           }
 
           document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (brake_f_high).toString() + " to "+ (brake_f_low).toString() + " KMPH.")
           document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (brake_p_high).toString() + " to " + (brake_p_low).toString() + " KMPH.")
         }      
-
+        
+         // document.getElementById("score").innerHTML = ("Score is : " + (window.score).toString() + " out of 3.")
 
       });
     }
   }
-
+  
+//  console.log(window.score)
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
