@@ -202,6 +202,7 @@ document.getElementById('button1').addEventListener("click", () => {
               window.indica = 2;
             }
           }
+          window.fast_points = 0;
           window.totime = 0;
           for (var dpts = window.lsec; dpts <= window.usec; dpts++)
           {
@@ -224,59 +225,6 @@ document.getElementById('button1').addEventListener("click", () => {
         }
         getjson();
         
-        
-
-
-        // reading maxima
-        lmax[0] = 0;
-        lmin[0] = 0;
-        lmax[speed.length-1] = 0;
-        lmin[speed.length-1] = 0;
-        for (var ma = 1; ma < speed.length - 1; ma++)
-        {
-          if (speed[ma-1]<speed[ma] && speed[ma+1] < speed[ma])
-          {
-            lmax[ma] = 1;
-          }
-          else if (speed[ma-1]==speed[ma] && speed[ma+1]<speed[ma])
-          {
-            lmax[ma] = 1;
-          }
-          else if (speed[ma-1]<speed[ma] && speed[ma+1] == speed[ma])
-          {
-            lmax[ma] = 1;
-          }
-          else
-          {
-            lmax[ma] = 0;
-          }
-        }
-
-        // Reading minima 
-        for (var ma = 1; ma < speed.length - 1; ma++)
-        {
-          if (speed[ma-1]>speed[ma] && speed[ma+1] > speed[ma])
-          {
-            lmin[ma] = 1;
-          }
-          else if (speed[ma-1]==speed[ma] && speed[ma+1]<speed[ma])
-          {
-            lmin[ma] = 1;
-          }
-          else if (speed[ma-1]<speed[ma] && speed[ma+1] == speed[ma])
-          {
-            lmin[ma] = 1;
-          }
-          else
-          {
-            lmin[ma] = 0;
-          }
-        }
-
-
-
-
-
         dl = [['Time', 'Speed']]
         tl = new Date(date[1]);
         tu = new Date(date[1]); 
@@ -306,58 +254,110 @@ document.getElementById('button1').addEventListener("click", () => {
                      
         }
         window.d = dl
-
-        // testing brake feel
-        var num = jspeed.length
-        var bfg = 5;
-        var brake_f_high = 0
-        var brake_f_low = 0
-        var brake_p_high = 0
-        var brake_p_low = 0
-        var ptime = new Date(date[1])
-        var ftime = new Date(date[1])
-        var bfindic = 2
-        for (var l = 0; l < num; l++)
+        // reading maxima
+        lmax[0] = 0;
+        lmin[0] = 0;
+        lmax[jspeed.length-1] = 0;
+        lmin[jspeed.length-1] = 0;
+        for (var ma = 1; ma < jspeed.length - 1; ma++)
         {
-          if (lmax[l]>0 && bfindic == 2 && jspeed[l] > 4 && jspeed[l] <25)
+          if (jspeed[ma-1]<jspeed[ma] && jspeed[ma+1] < jspeed[ma])
           {
-            brake_f_high = jspeed[l];
-            bfindic = 3;
+            
+            lmax[ma] = 1;
           }
-          if (lmin[l]>0 && bfindic ==3)
+          else if (jspeed[ma-1]==jspeed[ma] && jspeed[ma+1]<jspeed[ma])
           {
-            brake_f_low = jspeed[l];
-            ftime = jdate[l];
-            bfindic = 4;
-            if (brake_f_high - brake_f_low < bfg)
-            {
-              bfindic = 2;
-            }
+            lmax[ma] = 1;
+          }
+          else if (jspeed[ma-1]<jspeed[ma] && jspeed[ma+1] == jspeed[ma])
+          {
+            lmax[ma] = 1;
+          }
+          else
+          {
+            lmax[ma] = 0;
           }
         }
 
-        indicator = 2;
-        // testing brake power test
-        var bpg = 5;
-        var befpmax = 0;
-        for(var l = 0; l < num; l++)
+        // Reading minima 
+        for (var ma = 1; ma < jspeed.length - 1; ma++)
         {
-          if (indicator != 6 && jspeed[l]>25 && lmax[l]>0 && jspeed[l] < 70)
+          if (jspeed[ma-1]>jspeed[ma] && jspeed[ma+1] > jspeed[ma])
           {
-            brake_p_high = jspeed[l];
-            indicator = 5;
+            lmin[ma] = 1;
           }
-          if (indicator == 5 && lmin[l] > 0)
+          else if (jspeed[ma-1]==jspeed[ma] && jspeed[ma+1]>jspeed[ma])
           {
-            brake_p_low = jspeed[l];
-            ptime = jdate[l];
-            indicator = 6;
-            if (brake_p_high - brake_p_low < bpg)
+            lmin[ma] = 1;
+          }
+          else if (jspeed[ma-1]>jspeed[ma] && jspeed[ma+1] == jspeed[ma])
+          {
+            lmin[ma] = 1;
+          }
+          else
+          {
+            lmin[ma] = 0;
+          }
+        }
+
+        // testing brake feel
+        window.num = jspeed.length
+        window.bfg = 5;
+        window.brake_f_high = 0
+        window.brake_f_low = 0
+        window.brake_p_high = 0
+        window.brake_p_low = 0
+        window.ptime = new Date(date[1])
+        window.ftime = new Date(date[1])
+        window.bfindic = 2
+        for (var l = 0; l < num; l++)
+        {
+          if (lmax[l]>0 && window.bfindic == 2 && jspeed[l] > 4 && jspeed[l] <25)
+          {
+            window.brake_f_high = jspeed[l];
+            window.bfindic = 3;
+          }
+          if (lmin[l]>0 && window.bfindic ==3)
+          {
+            window.brake_f_low = jspeed[l];
+            window.ftime = jdate[l];
+            window.bfindic = 4;
+            if (window.brake_f_high - window.brake_f_low < bfg)
             {
-              indicator = 4;
+              window.bfindic = 2;
+              window.brake_f_low = 0
+              window.ftime = new Date(date[1])
+              window.brake_f_high = 0
             }
           }
+        }
+        window.indicator = 2;
 
+        // testing brake power test
+        window.bpg = 5;
+        window.befpmax = 0;
+        for(var l = 0; l < num; l++)
+        {
+          
+          if (window.indicator != 6 && jspeed[l]>25 && lmax[l]>0 && jspeed[l] < 70)
+          {
+            window.brake_p_high = jspeed[l];
+            window.indicator = 5;
+          }
+          if (window.indicator == 5 && lmin[l] > 0)
+          {
+            window.brake_p_low = jspeed[l];
+            window.ptime = jdate[l];
+            window.indicator = 6;
+            if (window.brake_p_high - window.brake_p_low < bpg)
+            {
+              window.indicator = 2;
+              window.brake_p_low = 0
+              window.ptime = new Date(date[1])
+              window.brake_p_high = 0
+            }
+          }
           if (befpmax<jspeed[l])
           {
             befpmax = jspeed[l];
@@ -365,80 +365,80 @@ document.getElementById('button1').addEventListener("click", () => {
         }
 
         // finding out the range of brake tests
-        var bf_range = brake_f_high - brake_f_low;
-        var bp_range = brake_p_high - brake_p_low;
+        window.bf_range = window.brake_f_high - window.brake_f_low;
+        window.bp_range = window.brake_p_high - window.brake_p_low;
 
-        var indbrake = 1;
-        if ((indicator == 6 && ftime>=ptime) || bf_range == 0)
+        window.indbrake = 1;
+        if ((window.indicator == 6 && window.ftime>=window.ptime) || window.bf_range == 0)
         {
-          indbrake = 2;
+          window.indbrake = 2;
         }
 
         ti = new Date(tl)
-        if ((ptime > ti.setMinutes(ti.getMinutes() + 15)) || befpmax > brake_p_high)
+        if ((window.ptime > ti.setMinutes(ti.getMinutes() + 15)) || window.bp_range==0 || befpmax > brake_p_high)
         {
-          if (indbrake == 2)
+          if (window.indbrake == 2)
           {
-            indbrake = 3;
+            window.indbrake = 3;
           }
           else
           {
-            indbrake = 4;
+            window.indbrake = 4;
           }
         }
 
 
-        var bp_prange = Number(document.getElementById("inp_bprange").value)
-        var bf_prange = Number(document.getElementById("inp_bfrange").value)
+        window.bp_prange = Number(document.getElementById("inp_bprange").value)
+        window.bf_prange = Number(document.getElementById("inp_bfrange").value)
         
         // Displaying Result of Brake tests
-        if (indbrake == 3)
+        if (window.indbrake == 3)
         {
           document.getElementById("bRemarks").innerHTML = ("Brake Feel and Brake Power tests are not done.");
         }
-        else if (indbrake == 2)
+        else if (window.indbrake == 2)
         {   
-          if (bp_range < bp_prange)
+          if (window.bp_range < window.bp_prange)
           {
            // window.score += 0.2;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Power test is done and it is not done in prescribed range.")
-            document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (brake_p_high).toString() + " to "+ num2str(brake_p_low) + " KMPH.")
+            document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (window.brake_p_high).toString() + " to "+ (window.brake_p_low).toString() + " KMPH.")
           }
           else
           {
           //  window.score += 0.5;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Power test is done and it is done in prescribed range.")
-            document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (brake_p_high).toString() + " to "+ (brake_p_low).toString() + " KMPH.")
+            document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (window.brake_p_high).toString() + " to "+ (window.brake_p_low).toString() + " KMPH.")
           }
         }
-        else if (indbrake == 4)
+        else if (window.indbrake == 4)
         {    
-          if (bf_range < bf_prange)
+          if (window.bf_range < window.bf_prange)
           {
           //  window.score += 0.2;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Feel test is done and it is not done in prescribed range.")
-            document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (brake_f_high).toString() + " to " + (brake_f_low).toString() + " KMPH.")
+            document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (window.brake_f_high).toString() + " to " + (window.brake_f_low).toString() + " KMPH.")
           }
           else
           {
            // window.score += 0.5;
             document.getElementById("bRemarks").innerHTML = ("Only Brake Feel test is done and it is done in prescribed range.")
-            document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (brake_f_high).toString() + " to " + (brake_f_low).toString() + " KMPH.")
+            document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (window.brake_f_high).toString() + " to " + (window.brake_f_low).toString() + " KMPH.")
           }
         } 
         else
         {
-          if (bf_range < bf_prange && bp_range < bp_prange)
+          if (window.bf_range < window.bf_prange && window.bp_range < window.bp_prange)
           {
           //  window.score += 0.4;
             document.getElementById("bRemarks").innerHTML = ("Brake tests are not done in prescribed range.")
           }
-          else if (bf_range < bf_prange)
+          else if (window.bf_range < window.bf_prange)
           {
            // window.score += 0.7;
             document.getElementById("bRemarks").innerHTML = ("Brake Power test done properly, but Brake Feel test is not done in prescribed range.")
           }
-          else if (bp_range < bp_prange)
+          else if (window.bp_range < window.bp_prange)
           {
            // window.score += 0.7;
             document.getElementById("bRemarks").innerHTML = ("Brake Feel test done properly, but Brake Power test is not done in prescribed range.")
@@ -449,8 +449,8 @@ document.getElementById('button1').addEventListener("click", () => {
           //  window.score += 1;
           }
 
-          document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (brake_f_high).toString() + " to "+ (brake_f_low).toString() + " KMPH.")
-          document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (brake_p_high).toString() + " to " + (brake_p_low).toString() + " KMPH.")
+          document.getElementById("bfrange").innerHTML = ("Brake Feel test done in the range: " + (window.brake_f_high).toString() + " to "+ (window.brake_f_low).toString() + " KMPH.")
+          document.getElementById("bprange").innerHTML = ("Brake Power test done in the range: " + (window.brake_p_high).toString() + " to " + (window.brake_p_low).toString() + " KMPH.")
         }      
         
          // document.getElementById("score").innerHTML = ("Score is : " + (window.score).toString() + " out of 3.")
@@ -459,7 +459,7 @@ document.getElementById('button1').addEventListener("click", () => {
     }
   }
   
-//  console.log(window.score)
+ //  console.log(window.score)
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
