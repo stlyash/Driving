@@ -1,20 +1,20 @@
 var ur = [];
 fetch("./RainyAms.json")
     .then( function (response) {return response.json})
-    .then(data => {
-      window.ur[1] = data.sentence;
+    .then(function (obj) {
+      window.ur[1] = obj;
     })
 
 fetch("./WinterAms.json")
 .then( function (response) {return response.json})
-.then(data => {
-  window.ur[2] = data.sentence;
+.then(function (obj) {
+  window.ur[2] = obj;
 })
 
 fetch("./SummerAms.json")
 .then( function (response) {return response.json})
-.then(data => {
-  window.ur[0] = data.sentence;
+.then(function (obj) {
+  window.ur[0] = obj;
 })
 /*
 function preload(){
