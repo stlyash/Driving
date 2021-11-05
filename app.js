@@ -161,8 +161,6 @@ document.getElementById('button1').addEventListener("click", () => {
           }
 
           var jsdata = window.ur[window.ind];
-          console.log(window.ur[0])
-          console.log(Object.keys(jsdata).length)
           for (var n = 0; n < Object.keys(jsdata).length;n++)
           {
             amsdic[(jsdata[n].Var1).toString()] = Number(jsdata[n].Var2)
@@ -247,8 +245,8 @@ document.getElementById('button1').addEventListener("click", () => {
           window.score += (window.fast_points/window.totime);
           // Adding ratio of total sections in which the AMS is achieved and the total number of sections in the score
           window.score += (ams_ach/(ams_not_ach + ams_ach));
-		  console.log(ams_ach);
-          document.getElementById("sec_ach").innerHTML = (ams_ach)
+		  //console.log(ams_ach);
+          document.getElementById("sec_ach").innerHTML = ("Sections in whihch AMS is achieved: " + ams_ach.toString())
           document.getElementById("sec_not_ach").innerHTML = ("Sections in whihch failed to achieve AMS: " + ams_not_ach.toString())
         }
         getjson();
