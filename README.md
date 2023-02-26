@@ -1,1 +1,1 @@
-Go to the website on this link - https://driving-technique.herokuapp.com
+Go to the website on this link - https://stlyash.github.io/Driving/
