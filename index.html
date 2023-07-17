@@ -19,9 +19,22 @@
         <script type="text/javascript" src="./RainyAms.json"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        .unselec {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer */
+        user-select: none; /* Generic */
+        }
+
+    </style>
     </head>
 
     <body>
+        <header class="unselec" style="width:100%;background-color: #4287f5;position:fixed; z-index:5;">
+            <h1 style="color:white; text-align:center; padding:1%;">SSTS: Evaluation of Loco Pilots from Speed-Time Chart</h1>
+        </header>
+        <main style="padding-top:4%">
         <div class="form-row">
 
             <div class="conatiner mt-5" style="margin-right: 5%;margin-left: 2%;">
@@ -40,16 +53,16 @@
         <br>
         <form action="" style="margin-left: 2%;">
             <b> Select Weather condition:</b> <br>
-            <input type="radio" name="weather" value="clear" checked>Clear
-            <input type="radio" name="weather" value="rainy">Rainy
-            <input type="radio" name="weather" value="foggy">Foggy
+             <input type="radio" name="weather" value="clear" checked>Clear    
+             <input type="radio" name="weather" value="rainy">Rainy
+            <input type="radio" name="weather" value="foggy">Foggy
         </form>
         <br>
         <form action="" style="margin-left: 2%;">
             <b>Select Crowd density:</b> <br>
-            <input type="radio" name="crowd" value="clear" checked>Normal
-            <input type="radio" name="crowd" value="rainy">Moderately Crowded
-            <input type="radio" name="crowd" value="foggy">Heavily Crowded
+         <input type="radio" name="crowd" value="clear" checked>Normal
+         <input type="radio" name="crowd" value="rainy">Moderately Crowded
+         <input type="radio" name="crowd" value="foggy">Heavily Crowded
         </form>
         <div class="form-row">
             <div class="conatiner mt-5" style="margin-left: 2%;margin-right: 5%;">
@@ -77,6 +90,9 @@
         </div>
     <br>
 	<a style="margin-left: 2%;" href="https://drive.google.com/drive/folders/1h_ELin4UK7Ri3VEsapMa5iBPypK9R10p?usp=share_link">Download Sample CTR and Tracker files for Testing</a>🔗
+    <a style="margin-left: 2%;" href="https://github.com/stlyash/Driving">View on GitHub</a>🔗
+
+    
 
         <div id="curve_chart" style="width: 4000px; height: 400px;margin-left: 2%"></div>
 
@@ -97,6 +113,7 @@
         <label style="margin-left: 2%;"id = "total_time"></label><br>
         <br>
         <label style="margin-left: 2%;"id = "score"></label><br>
+    </main>
 
 
     </body>
